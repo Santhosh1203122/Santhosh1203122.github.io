@@ -5,9 +5,20 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/skill.css">
 		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Dancing+Script|Fredericka+the+Great" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Italianno|Norican|Overlock" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			function selectStep(n) {
+				$(".dis").hide();
+				$("#content"+n).show();
+			}
+
+		</script> 
 		
 	</head>
 	<body class="bg-im">
@@ -15,11 +26,9 @@
 			  <input type="radio" class="rnav two" id="slide_2" name="coins">
 			  <input type="radio" class="rnav three" id="slide_3" name="coins">
 			  <input type="radio" class="rnav four" id="slide_4" name="coins">
-			 
-			 
-	  	<div class="mah">
+		  	<div class="mah">
 			<header>
-			   <label for="slide_1"><i class="material-icons" title="home">home</i></label>
+			    <label for="slide_1"><i class="material-icons" title="home">home</i></label>
 			    <label for="slide_2"><i class="material-icons" title="About Me">face</i></label>
 			    <label for="slide_3"><i class="material-icons" title="Projects">build</i></label>
 			    <label for="slide_4"><i class="material-icons" title="Contact">call</i></label>
@@ -38,19 +47,193 @@
 					</div>
 				</section>
 	    	</div>
-	    	<div class="con two container" id="nex">
-				<section id="conttwo">
-					<div class="row">	
-							<div class="col-lg-4 col-md-4 col-sm-4"><h2>About Me</h2></div>
-						<div id="imgh" class="col-lg-8 col-md-8 col-sm-8">
-									
-							<p>I love cheese, especially manchego swiss. &#9786; Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert de normandie bocconcini. Cottage cheese everyone loves cauliflower cheese rubber cheese squirty cheese halloumi cow fondue. Bocconcini cheese and biscuits everyone loves fondue red leicester st. agur blue cheese rubber cheese ricotta. Cheesy grin mozzarella.</p>
-						</div>
-						
+	    	
+		    	<div class="con two" id="ma">
+		    		<div class="container">
+			    		<section id="conttwo">
+							<div class="row" >	
+									<div class="col-lg-4 col-md-4 col-sm-4 sm">
+										<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 acm"><a id="se1" onclick="selectStep(1); return false;">About Me</a><hr></div>
+										<div class="col-lg-12 col-md-12 col-sm-12 acm"><a id="se2" onclick="selectStep(2); return false;">Education</a><hr></div>
+										<div class="col-lg-12 col-md-12 col-sm-12 acm"><a id="se3" onclick="selectStep(3); return false;">Skills</a><hr></div>
+										<div class="col-lg-12 col-md-12 col-sm-12 acm"><a id="se4" onclick="selectStep(4); return false;">Inspiration</a></div>
+										</div>
+									</div>
+									<div  class="col-lg-7 col-md-7 col-sm-7 lm ed">
+										<section class="dis row ts" id="content1">
+											<div class ="col-lg-12 col-md-12 col-sm-12">
+												<h2>Santhosh Muthusamy</h2>
+											</div>
+											<div class="col-lg-12 col-md-12 col-sm-12">
+												<p>My name is Santhosh Muthusamy, I'm a responsive web developer. I have currently completed my Bachelors degree in enginerring from Sri Ramakrishna Engineering College, Coimbatore. While studying my Bachelors degree I obtained Post Graduate Diploma in Industrial Process Plant and Robotics Automation. I was the Seceratary of our Deprtment during my college days.</p>
+												<hr>
+												<p>I was born and brought up in a small town named Pudukkottai located in The state of Tamil Nadu in India. I then shifted to Karur for my High school. Then went to Coimbatore for my College, in the mean time stayed in Chennai for my Post Graduate Diploma course.</p>
+												<hr>						
+												<p class="pd1"><strong>Status :</strong> Currently waiting for my Date of Joining in India's Second largest IT company</p>
+
+											</div>
+										</section>
+										<section class="dis row ts ed" id="content2">
+											<div class ="col-lg-12 col-md-12 col-sm-12">
+												<h2>Sri Ramakrishna Engineering College</h2>
+												<h4>Coimbatore,Tamil Nadu - India</h4>
+												<p>This is the institution in which I completed my Bachelor of Engineering degree in the field of Electrical and Electronics Engineering. It was the place in which I learnt lot of things which helped to build my carrer. Other then education I was part of our college Table-Tennis team. During the four years of my studies I was in various position of our department association, starting from Executive-member, then Joint-Seceratary and finally became the Seceratary of our department in the final year.</p>
+												<hr>
+											</div>
+											
+											<div class ="col-lg-12 col-md-12 col-sm-12">
+												<h2>Bharani Park Mat High Sec School</h2>
+												<h4>Karur,Tamil Nadu - India</h4>
+												<p>Completed my High school here by staying in hostel. It was a tough journey because it was the first time I was staying in hostel.</p>
+												<hr>
+											</div>
+											
+											<div class ="col-lg-12 col-md-12 col-sm-12">
+												<h2>Vairams Mat Hig Sec School</h2>
+												<h4>Pudukkottai,Tamil Nadu - India</h4>
+												<p>This is the place were I started my schoolings. Each and every thing which I'm now is because of the foundation which was given by my teachers here.</p>
+											</div>
+
+										</section>
+										<section class="dis" id="content3">
+											<div>
+													      <div id="resumeProficiencies">
+    
+												       <div id="resumeProficienciesTop" class="resumeProficienciesTop1">HTML5</div><!--END resumeProficienciesTop-->
+
+												       <div id="resumeProficienciesBottom">
+												        <div class="progress">
+												          <div class="adobe progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+												          </div>
+												        </div>
+												      </div><!--END resumeProficienciesBottom-->
+
+												      <div id="resumeProficienciesTop">CSS3</div><!--END resumeProficienciesTop-->
+												     
+												     <div id="resumeProficienciesBottom">
+												      <div class="progress">
+												        <div class="html progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+												        </div>
+												      </div>
+												     </div><!--END resumeProficienciesBottom-->   
+
+												     <div id="resumeProficienciesTop">jQuery</div><!--END resumeProficienciesTop-->
+
+												     <div id="resumeProficienciesBottom">
+												      <div class="progress">
+												        <div class="css progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+												        </div>
+												      </div>
+												    </div><!--END resumeProficienciesBottom-->   
+
+												    <div id="resumeProficienciesTop">Javascript</div><!-- END resumeProficienciesTop -->
+
+												    <div id="resumeProficienciesBottom">
+												      <div class="progress">
+												        <div class="jquery progress-bar progress-bar-info" role="progressbar" style="width: 0%"></div>
+												      </div>
+												    </div><!--END resumeProficienciesBottom-->
+
+												    <div id="resumeProficienciesTop">Bootstrap</div><!--END resumeProficienciesTop-->
+
+												    <div id="resumeProficienciesBottom">
+												      <div class="progress">
+												        <div class="javascript progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+												        </div>
+												      </div>
+												    </div><!--END resumeProficienciesBottom-->
+
+												    <div id="resumeProficienciesTop">Responsive Web Design</div><!--END resumeProficienciesTop-->
+
+												    <div id="resumeProficienciesBottom">
+												      <div class="progress">
+												        <div class="bootstrap progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+												        </div>
+												      </div>
+												    </div><!--END resumeProficienciesBottom-->
+
+												    <div id="resumeProficienciesTop">PLC</div><!--END resumeProficienciesTop-->
+
+												    <div id="resumeProficienciesBottom">
+												      <div class="progress">
+												        <div class="wordpress progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+												        </div>
+												      </div>
+												    </div><!--END resumeProficienciesBottom-->   
+
+												    <div id="resumeProficienciesTop">SCADA</div><!--END resumeProficienciesTop-->
+
+												    <div id="resumeProficienciesBottom">
+												      <div class="progress">
+												        <div class="ui progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+												        </div>
+												      </div>
+												    </div><!-- ENDresumeProficienciesBottom-->   
+
+												    <div id="resumeProficienciesTop">DCS</div><!--END resumeProficienciesTop-->
+
+												    <div id="resumeProficienciesBottom">
+												      <div class="progress">
+												        <div class="ux progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+												        </div>
+												      </div>
+												    </div><!--END resumeProficienciesBottom-->   
+
+												    <div id="resumeProficienciesTop">PAC</div><!--END resumeProficienciesTop-->
+
+												    <div id="resumeProficienciesBottom">
+												      <div class="progress">
+												        <div class="rwd progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+												         <span class="sr-only"></span>
+												       </div>
+												     </div>
+												    </div><!--END resumeProficienciesBottom-->
+
+												    <div id="resumeProficienciesTop">ROBOTICS</div><!--END resumeProficienciesTop-->
+
+												    <div id="resumeProficienciesBottom">
+												      <div class="progress">
+												        <div class="mobile progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+												         <span class="sr-only"></span>
+												       </div>
+												     </div>
+												    </div><!--END resumeProficienciesBottom-->
+
+												    <div id="resumeProficienciesTop">AutoCAD</div><!--END resumeProficienciesTop-->
+
+												    <div id="resumeProficienciesBottom">
+												      <div class="progress">
+												        <div class="rapidproto progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+												         <span class="sr-only"></span>
+												       </div>
+												     </div>
+												    </div><!--END resumeProficienciesBottom-->   
+												</div>
+											</div>
+										</section>
+										<section class="dis" id="content4">
+											<div class="row">
+												<div class="col-lg-12 col-md-12 col-sm-12">
+													<h2>Dr.A.P.J.Abdul Kalam</h2>
+												</div>
+												<div class="col-lg-4 col-md-4 col-sm-4">
+													<img src="images/apj.jpg" class="img-responsive">
+												</div>
+												<div class="col-lg-8 col-md-8 col-sm-8">
+													<p>Look at the sky. We are not alone. The whole universe is friendly to us and conspires only to give the best to those who dream and work</p>
+												</div>
+												<hr>
+											</div>
+										</section>
+									</div>
+								
+							</div>
+						</section>
 					</div>
-				</section>
-			</div>
+				</div>
 		</div> 	
-		<script type="text/javascript" src="js/util.js"></script>
+		<script src='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'></script>
+		<script src="js/skill.js"></script>
 	</body>
 </html>

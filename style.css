@@ -20,14 +20,12 @@
 .one:checked ~ .mah > .one,
 .two:checked ~ .mah > .two,
 .three:checked ~ .mah > .three,
-.four:checked ~ .mah > .four,
-.five:checked ~ .mah > .five {
+.four:checked ~ .mah > .four
+{
   opacity: 1;
 }
 
-.on {
-	opacity: 1;
-}
+
 #contone {
 	font-family: 'Fredericka the Great', cursive;
 	background-color: white;
@@ -51,11 +49,7 @@ font-family: 'Fredericka the Great', cursive;
 	font-family: 'Fredericka the Great', cursive;
 	margin-top: 15vh;
 	
-	
-	left: 0;
 	margin-right: 10vw;
-	margin-left: 10vw;
-	
 	position: absolute; 
 	}	
 
@@ -71,20 +65,14 @@ font-family: 'Fredericka the Great', cursive;
 	margin-right: 0px;
 }
 
-#imgh {
-	padding-right: 0px;
-}
+
 
 h1{
 	position: absolute;
     bottom: 52.5%;
     padding-left: 3%;
 }
- .btn {
- 	position: absolute;
- 	top: 65%;
- 	left: 30%;
- }
+
 
 h3 {
 	position: absolute;
@@ -128,15 +116,99 @@ header label:hover {
   display: none;
 }
 
-.abm {
-	position: relative;
-	top: 15%;
-	left: 20%;
-}
-/*
+ 
+
+ 
 .meb {
 	background-image: url('images/meb.jpg');
 	background-size: cover;
 	height: 40vh;
 }
+
+#content1, #content2 {
+	transition: left 0s .75s;
+}
+
+.dis {
+	display: none;
+}
+
+.dis:nth-child(1) {
+	display: block;
+}
+.sm {
+	width: 20vw;	
+	color: white;
+	background-color: #ece6e6;
+	border-radius: 10px;
+	max-height: 210px;
+	margin-top: 6vh;
+ 	margin-right: 10vw;
+ 	box-shadow: 0 .5em 1em #111; 
+}
+.acm {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
+	color: black;
+	cursor: pointer;
+}
+
+.acm:hover {
+	background-color: #2e353b;
+
+}
+
+.lm {
+	margin-top: 5vh;
+
+	background-color: #fbe4ea;
+ 	margin-left: 5px;
+ 	margin-right: 5px; 
+ 	box-shadow: 0 .5em 1em #111; 
+ 	border-radius: 10px;	
+}
+/*
+a {
+	color: black;
+	text-decoration: none;
+}
 */
+
+a:hover {
+	text-decoration: none;
+	
+}
+
+hr {
+	margin-top: 0;
+	margin-bottom: 0;
+	border-color: #dacdcd;	
+}
+
+#ma .container {
+	margin-left: 0;
+}
+
+.ts {
+	text-align: justify;
+}
+
+.pd {
+	font-family: 'Italianno', cursive;
+	font-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.pd1 {
+	font-family: 'Norican', cursive;
+	font-size: 25px;
+	color: #342727;
+}
+
+.ed {
+	font-family: 'Overlock', cursive;
+	font-size: 15px;
+}
